@@ -20,4 +20,22 @@ const eachCallbackFunc = (ele) => {
      return (ele * 2);
 };
 
-console.log([2, 3, 4].myMap(eachCallbackFunc));
+// console.log([2, 3, 4].myMap(eachCallbackFunc));
+
+Array.prototype.myReduce = function(callback, initialValue) {
+    // if (initialValue === undefined) {
+    //     initialValue = this[0];
+    // }
+    initialValue ||= this[0];
+    let acc = 0;
+
+    this.myEach(ele => acc += callback(ele));
+
+    return acc;
+};
+
+const CallbackFunc = (ele) => {
+    return (ele * 2);
+};
+
+console.log([4, 5, 7].myReduce(CallbackFunc));
