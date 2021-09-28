@@ -38,4 +38,4 @@ const CallbackFunc = (ele) => {
     return (ele * 2);
 };
 
-console.log([4, 5, 7].myReduce(CallbackFunc));
+// console.log([4, 5, 7].myReduce(CallbackFunc));
