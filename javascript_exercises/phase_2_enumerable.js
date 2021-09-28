@@ -1,5 +1,5 @@
 Array.prototype.myEach = function(callback) {
-    for(i = 0; i < this.length; i++) {
+    for(let i = 0; i < this.length; i++) {
         callback(this[i]);
     }
 };

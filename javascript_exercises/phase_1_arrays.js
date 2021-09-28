@@ -1,7 +1,7 @@
 
 Array.prototype.uniq = function() {
     const arr = [];
-    for(i = 0; i < this.length; i++) {
+    for(let i = 0; i < this.length; i++) {
        if (arr.includes(this[i]))  {
         continue;
        }
@@ -18,8 +18,8 @@ Array.prototype.uniq = function() {
 
 Array.prototype.twoSum = function() {
     const arr = [];
-    for(i = 0; i < this.length-1; i++) {
-        for(j = 1; j < this.length; j++) {
+    for(let i = 0; i < this.length-1; i++) {
+        for(let j = 1; j < this.length; j++) {
             if (this[i] + this[j] === 0){
                 arr.push([i,j]);
             }
@@ -34,11 +34,11 @@ Array.prototype.twoSum = function() {
 
 Array.prototype.transpose = function() {
     const arr = [];
-    for(i=0; i < this.length; i++) {
+    for(let i=0; i < this.length; i++) {
         arr.push([]);
     }
-    for (i = 0; i < this.length; i++) {
-        for (j = 0; j < this.length; j++) {
+    for (let i = 0; i < this.length; i++) {
+        for (let j = 0; j < this.length; j++) {
             arr[j].push(this[i][j]);
         }
     }

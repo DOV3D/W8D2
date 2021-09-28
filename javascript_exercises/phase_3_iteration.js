@@ -3,7 +3,7 @@ Array.prototype.bubbleSort = function () {
     // debugger;
     while (!sorted) { 
         sorted = true;
-        for(i = 0; i < this.length - 1; i++) {
+        for(let i = 0; i < this.length - 1; i++) {
             if (this[i] > this[i +1]) {
                 let temp = this[i];
                 this[i] = this[i +1];
@@ -20,8 +20,8 @@ Array.prototype.bubbleSort = function () {
 
 String.prototype.subStrings = function () {
     const arr = [];
-    for(i=0; i < this.length; i++) {
-        for(j=0; j <this.length; j++) {
+    for(let i=0; i < this.length; i++) {
+        for(let j=0; j <this.length; j++) {
             let slice = this.slice(i,j+1);
             if (slice === "") {
                 continue;
